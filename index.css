@@ -1,0 +1,478 @@
+
+html {
+
+ scroll-behavior: smooth;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: rgb(19, 19, 19);
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+
+
+  .dropdown {
+    align-content: center;
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #1a87ee;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.logout{
+  text-align: left;
+  font-family: sans-serif;
+  color:rgb(247, 112, 31);
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-underline-position: below;
+}
+
+.container{
+   align-items: center;
+   justify-content: center;
+}
+
+
+.brightness-box{
+    width: 400px;
+    height: 60px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.brightness-box i{
+    margin: 0 10px;
+}
+
+
+.footer-basic {
+  padding:40px 0;
+  background-color:rgb(19, 19, 19);
+  color:#4b4c4d;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: 2px 2px 5px rgb(3, 3, 3);
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 12px;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 100px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.fade-in-text {
+
+
+display: inline-block;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  text-shadow: 2px 2px 5px rgb(3, 3, 3);
+  color: rgb(255, 255, 255);
+  animation: fadeIn linear 2s;
+  -webkit-animation: fadeIn linear 2s;
+  -moz-animation: fadeIn linear 2s;
+  -o-animation: fadeIn linear 2s;
+  -ms-animation: fadeIn linear 2s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+.fade-in-text:hover {
+  text-size-adjust: 10%;
+  text-shadow: 2px 2px 5px rgb(3, 3, 3);
+  
+}
+
+.subscribe {
+  text-align: center;
+  border: 0px solid rgba(0,0,0,0);
+  width: 80px;
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.subscribe:hover {
+  cursor: pointer;
+  animation-name: subscribete;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes subscribete {
+  from {transform:scale(100%)}
+  to {transform:scale(105%)}
+}
+
+.container2 {
+  justify-content: center;
+  align-items: center;
+}
+
+.instagram {
+  text-align: center;
+  border: 0px solid rgba(0,0,0,0);
+  width: 80px;
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.instagram:hover {
+  cursor: pointer;
+  animation-name: instagramete;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes instagramete {
+  from {transform:scale(100%)}
+  to {transform:scale(105%)}
+}
+
+.twitter {
+  text-align: center;
+  border: 0px solid rgba(0,0,0,0);
+  width: 80px;
+  height: 70px;
+  align-items: right;
+  justify-content: right;
+
+}
+
+.twitter:hover {
+  cursor: pointer;
+  animation-name: twitterete;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes twitterete {
+  from {transform:scale(100%)}
+  to {transform:scale(105%)}
+}
+
+.box input[type = "submit"]{
+  border:0;
+  background: #cc13f1;
+  display:block;
+  margin: 20px auto;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  font-size: large;
+  border: 2px solid #cc13f1;
+  padding: 14px 10px;
+  width: 300px;
+  outline: black;
+  color: white;
+  border-radius: 18px;
+  transition: 0.25;
+  cursor: pointer;
+  box-shadow: 0 0 20px #cc13f1;
+}
+
+.box input[type = "submit"]:hover{
+background: #cc13f1;
+animation-name: discord;
+animation-duration: 0.5s;
+animation-fill-mode: forwards;
+}
+
+@keyframes discord {
+  from {transform:scale(100%)}
+  to {transform:scale(105%)}
+}
+
+
+.boxf input[type = "submit"]{
+  border:0;
+  background:#616060;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  border: 2px solid #616060;
+  padding: 14px 10px;
+  width: 300px;
+  outline: none;
+  color: white;
+  border-radius: 18px;
+  transition: 0.25;
+  cursor: pointer;
+  box-shadow: 0 0 30px #616060;
+}
+
+.boxf input[type = "submit"]:hover{
+background: #616060;
+animation-name: discordf;
+animation-duration: 0.5s;
+animation-fill-mode: forwards;
+}
+
+@keyframes discordf {
+  from {transform:scale(100%)}
+  to {transform:scale(105%)}
+}
+
+
+.infotext {
+   margin: 70px;
+   padding: 0;
+}
+
+
+
+.img {
+  box-shadow: rgb(19, 19, 19);
+}
+
+.box11 {
+  align-items: center;
+}
+
+.dwnbox {
+ align-items: center;
+}
+
+@keyframes dwnhover {
+  from{transform:scale(100%)}
+  to {transform:scale(110%)}
+}
+
+.dwnbox:hover {
+  animation-name: dwnhover;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
